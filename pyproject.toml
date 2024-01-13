@@ -7,7 +7,7 @@ name = "src"
 version = "0.0.1"
 description = "Private Customized Music Bot for the golden federation discord"
 authors = [
-  { name = "RaixSplitter", email = "your@email.com" },
+  { name = "RaixSplitter", email = "markus.bao.quan@email.com" },
 ]
 license = { file = "LICENSE" }
 readme = "README.md"

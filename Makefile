@@ -18,7 +18,7 @@ PYTHON_INTERPRETER = python
 
 ## Set up python interpreter environment
 create_environment:
-	conda create --name $(PROJECT_NAME) python=$(PYTHON_VERSION) --no-default-packages -y
+	$(PYTHON_INTERPRETER) -m venv .venv
 
 ## Install Python Dependencies
 requirements:
@@ -40,9 +40,6 @@ clean:
 # PROJECT RULES                                                                 #
 #################################################################################
 
-## Process raw data into processed data
-data:
-	python $(PROJECT_NAME)/data/make_dataset.py
 
 #################################################################################
 # Documentation RULES                                                           #
